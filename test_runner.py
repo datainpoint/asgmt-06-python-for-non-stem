@@ -1,7 +1,7 @@
 import unittest
 import importlib
 
-class TestAssignmentFive(unittest.TestCase):
+class TestAssignmentSix(unittest.TestCase):
     def test_01(self):
         self.assertEqual(answers.answer_01(1), 1)
         self.assertEqual(answers.answer_01(2), 2)
@@ -49,7 +49,7 @@ class TestAssignmentFive(unittest.TestCase):
 
 chapter_name = "使用流程控制管理程式區塊的執行：迴圈"
 answers = importlib.import_module("answers")
-suite = unittest.TestLoader().loadTestsFromTestCase(TestAssignmentFive)
+suite = unittest.TestLoader().loadTestsFromTestCase(TestAssignmentSix)
 runner = unittest.TextTestRunner(verbosity=2)
 test_results = runner.run(suite)
 number_of_failures = len(test_results.failures)
